@@ -1,0 +1,21 @@
+{
+  "name": "autouml-v3",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "fence": "node scripts/check-fence.mjs",
+    "floor": "node scripts/floor-guard.mjs",
+    "check": "node scripts/check-fence.mjs && node scripts/floor-guard.mjs && tsc && vitest run && knip"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "knip": "^5.0.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0"
+  },
+  "knip": {
+    "entry": ["scripts/*.mjs", "tests/**/*.test.ts", "vitest.config.ts", "src/domain/model.ts"],
+    "project": ["src/**/*.ts", "scripts/**/*.mjs", "tests/**/*.ts"]
+  }
+}

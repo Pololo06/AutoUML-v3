@@ -20,17 +20,19 @@ Reconstrucción greenfield del visor/editor de diagramas de clases PlantUML.
 
 ## Estado
 
-- **Ciclo 0 cerrado** con reservas. **Ciclo 1 aprobado**: `docs/plan-1.md` y `docs/SPEC-parser.md` son el encargo. Revisiones `../use.ai/review-01..03.md` cerradas.
-- **Sin código y sin commits.** El primer commit lo hace el usuario.
-- **Siguiente: C1a**, nueve archivos: `package.json`, `tsconfig.json`, `vitest.config.ts`, `CONSTRAINTS.md`, `scripts/check-fence.mjs`, `scripts/floor-guard.mjs`, `src/domain/model.ts`, `src/core-buffer/text-buffer.ts`, `tests/core-buffer/eol-mapping.test.ts`. El parser, `hand-10`, los `.v2` y el bench son C1b.
+- **Ciclo 0 cerrado** con reservas. **Ciclo 1 aprobado**: `docs/plan-1.md` y `docs/SPEC-parser.md` son el encargo. Revisiones `../prompts/review-01..03.md` cerradas.
+- **C1a turno 1 APROBADO e INTEGRADO en el árbol (7 archivos)**: `.gitignore`, `package.json`, `tsconfig.json`, `vitest.config.ts`, `CONSTRAINTS.md`, `scripts/check-fence.mjs` y `src/domain/model.ts`. Ver `../prompts/review-09.md` y `../prompts/entrega-09-raw.txt`.
+- **Sin commits todavía.** Samuel aprueba decisiones de producto y hace los commits.
+- **Siguiente: C1a turno 2** (3 archivos restantes): `scripts/floor-guard.mjs`, `tests/core-buffer/eol-mapping.test.ts` (test antes que el código), y `src/core-buffer/text-buffer.ts`. C1b abordará el parser, `hand-10` y los `.v2`.
 - **Ciclos restantes**: C2 layout+ruteo, C3 sesión+disco+IPC, C4a prototipo (puerta V10), C4b lienzo, C5 edición+extras, C6 empaquetado.
-- Detalle operativo, 13 decisiones cerradas y adjuntos para el modelo web: `../use.ai/04-HANDOFF-OPUS.md`.
+- Detalle operativo, 13 decisiones cerradas y paquete de 10 adjuntos (sin URLs externas) para el modelo web: `../prompts/adjuntos/1-handoff.md`.
 
 ## Reglas de trabajo
 
 - **Lee `CONSTRAINTS.md` antes de tocar código.** Fija las dimensiones, sus umbrales y el juez externo (`knip`); la valla (`check-fence`) vigila el estado y `floor-guard` el diff.
-- **El modelo web (Opus) es solo web**: entrega manifiesto y archivos completos, y no ejecuta nada. La verificación, el banco y los commits son locales. Contexto de traspaso: `../use.ai/04-HANDOFF-OPUS.md`.
+- **El modelo web es solo web**: entrega manifiesto y archivos completos, y no ejecuta nada. Codex integra la entrega y verifica localmente; Samuel aprueba el producto y hace los commits. Contexto de traspaso: `../prompts/adjuntos/1-handoff.md`.
 - Test rojo antes de código. Los tiempos se miden en `scripts/bench-*`, **nunca** en vitest.
 - Un ciclo ataca un riesgo dominante. Sin `check` verde y sin revisión cerrada no se empieza el siguiente.
 - Ningún agente commitea: los commits los hace el usuario, uno por ciclo.
+- **Presupuesto de sesión**: una tarea por sesión y cierre obligatorio con bloque `HANDOFF`. Regla completa en `../AGENTS.md`.
 - Prohibido heredar `CAPABILITY-MAP`, nombres de módulos o estructura de carpetas del repo viejo.
