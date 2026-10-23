@@ -21,9 +21,8 @@ Reconstrucción greenfield del visor/editor de diagramas de clases PlantUML.
 ## Estado
 
 - **Ciclo 0 cerrado** con reservas. **Ciclo 1 aprobado**: `docs/plan-1.md` y `docs/SPEC-parser.md` son el encargo. Revisiones `../prompts/review-01..03.md` cerradas.
-- **C1a turno 1 APROBADO e INTEGRADO en el árbol (7 archivos)**: `.gitignore`, `package.json`, `tsconfig.json`, `vitest.config.ts`, `CONSTRAINTS.md`, `scripts/check-fence.mjs` y `src/domain/model.ts`. Ver `../prompts/review-09.md` y `../prompts/entrega-09-raw.txt`.
-- **Sin commits todavía.** Samuel aprueba decisiones de producto y hace los commits.
-- **Siguiente: C1a turno 2** (3 archivos restantes): `scripts/floor-guard.mjs`, `tests/core-buffer/eol-mapping.test.ts` (test antes que el código), y `src/core-buffer/text-buffer.ts`. C1b abordará el parser, `hand-10` y los `.v2`.
+- **C1a COMPLETO e INTEGRADO (10 archivos)**: Turno 1 (commit `2e24e58`) + Turno 2 integrado y verificado con `npm run check` verde (11 tests en `eol-mapping.test.ts`, `text-buffer.ts`, `floor-guard.mjs`, vallas y `knip` limpios). Ver `../prompts/review-10.md` y `../prompts/entrega-10-raw.txt`.
+- **Siguiente: Cierre de C1a (commit) y arranque de C1b**: parser PlantUML (`src/puml-parser/`), fixture manual `hand-10.puml`, modelos `.v2` y banco `bench-parser.ts`.
 - **Ciclos restantes**: C2 layout+ruteo, C3 sesión+disco+IPC, C4a prototipo (puerta V10), C4b lienzo, C5 edición+extras, C6 empaquetado.
 - Detalle operativo, 13 decisiones cerradas y paquete de 10 adjuntos (sin URLs externas) para el modelo web: `../prompts/adjuntos/1-handoff.md`.
 
