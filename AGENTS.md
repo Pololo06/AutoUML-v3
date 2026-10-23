@@ -33,5 +33,6 @@ Reconstrucción greenfield del visor/editor de diagramas de clases PlantUML.
 - Test rojo antes de código. Los tiempos se miden en `scripts/bench-*`, **nunca** en vitest.
 - Un ciclo ataca un riesgo dominante. Sin `check` verde y sin revisión cerrada no se empieza el siguiente.
 - Ningún agente commitea: los commits los hace el usuario, uno por ciclo.
+- **Regla irrompible para el modelo web**: Siempre que se defina qué archivos o prompt pasar a la web, DEBEN dejarse empaquetados y listos en su propia carpeta dentro de `prompts/paquetes-web/` (ej. `prompts/paquetes-web/C1b-prompt.txt`) con los adjuntos y el mensaje exacto para copiar y pegar sin fricción.
 - **Presupuesto de sesión**: una tarea por sesión y cierre obligatorio con bloque `HANDOFF`. Regla completa en `../AGENTS.md`.
 - Prohibido heredar `CAPABILITY-MAP`, nombres de módulos o estructura de carpetas del repo viejo.
