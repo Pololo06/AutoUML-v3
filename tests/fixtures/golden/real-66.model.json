@@ -1,0 +1,6667 @@
+{
+ "types": [
+  {
+   "id": "App",
+   "name": "App",
+   "packageName": "com.universidad",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "main",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "args",
+       "type": "String[]"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "iniciarAplicacion",
+     "returnType": "void",
+     "parameters": [],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "registrarModulos",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "motorConsola",
+       "type": "CliEngine"
+      },
+      {
+       "name": "config",
+       "type": "ConfiguracionDeDependencias"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 8,
+   "endLine": 12
+  },
+  {
+   "id": "AppScannerCli",
+   "name": "AppScannerCli",
+   "packageName": "com.universidad",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "configuracionCompleta",
+     "returnType": "CliConfig",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": true,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "AppScannerCli",
+     "parameters": [],
+     "visibility": "-"
+    }
+   ],
+   "enumConstants": [],
+   "line": 14,
+   "endLine": 17
+  },
+  {
+   "id": "AsignaturaCostoActualizarDto",
+   "name": "AsignaturaCostoActualizarDto",
+   "packageName": "com.universidad.application.dto.asignaturacosto",
+   "declaredKind": "record",
+   "category": "record",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "id",
+     "type": "Integer",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nuevoNombre",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nuevasSemanas",
+     "type": "Short",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nuevoCosto",
+     "type": "BigDecimal",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "validarSemanas",
+     "returnType": "Short",
+     "parameters": [
+      {
+       "name": "semanas",
+       "type": "Short"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 22,
+   "endLine": 28
+  },
+  {
+   "id": "AsignaturaCostoCrearDto",
+   "name": "AsignaturaCostoCrearDto",
+   "packageName": "com.universidad.application.dto.asignaturacosto",
+   "declaredKind": "record",
+   "category": "record",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "nombre",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "semanas",
+     "type": "Short",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "costoBase",
+     "type": "BigDecimal",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "validarSemanas",
+     "returnType": "Short",
+     "parameters": [
+      {
+       "name": "semanas",
+       "type": "Short"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 30,
+   "endLine": 35
+  },
+  {
+   "id": "AsignaturaCostoDto",
+   "name": "AsignaturaCostoDto",
+   "packageName": "com.universidad.application.dto.asignaturacosto",
+   "declaredKind": "record",
+   "category": "record",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "id",
+     "type": "Integer",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nombre",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "semanas",
+     "type": "Short",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "costoBase",
+     "type": "BigDecimal",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "estado",
+     "type": "EstadoEntidad",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 37,
+   "endLine": 43
+  },
+  {
+   "id": "CursoActualizarDto",
+   "name": "CursoActualizarDto",
+   "packageName": "com.universidad.application.dto.curso",
+   "declaredKind": "record",
+   "category": "record",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "id",
+     "type": "UUID",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nuevoNombre",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nuevoCupo",
+     "type": "Integer",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nuevoEstado",
+     "type": "Integer",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "obtenerEstadoComoEnum",
+     "returnType": "EstadoEntidad",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 48,
+   "endLine": 54
+  },
+  {
+   "id": "CursoCrearDto",
+   "name": "CursoCrearDto",
+   "packageName": "com.universidad.application.dto.curso",
+   "declaredKind": "record",
+   "category": "record",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "codigoCurso",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nombreCurso",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "creditosCurso",
+     "type": "Integer",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "cupoMaximoCurso",
+     "type": "Integer",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 56,
+   "endLine": 61
+  },
+  {
+   "id": "CursoDto",
+   "name": "CursoDto",
+   "packageName": "com.universidad.application.dto.curso",
+   "declaredKind": "record",
+   "category": "record",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "id",
+     "type": "UUID",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "codigoCurso",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nombreCurso",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "creditosCurso",
+     "type": "Integer",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "cupoMaximoCurso",
+     "type": "Integer",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "estado",
+     "type": "EstadoEntidad",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "activo",
+     "type": "boolean",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 63,
+   "endLine": 71
+  },
+  {
+   "id": "EstudianteActualizarDto",
+   "name": "EstudianteActualizarDto",
+   "packageName": "com.universidad.application.dto.estudiante",
+   "declaredKind": "record",
+   "category": "record",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "id",
+     "type": "UUID",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nuevoCorreo",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nuevoCelular",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nuevaDireccion",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nuevoEstado",
+     "type": "Integer",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "obtenerEstadoComoEnum",
+     "returnType": "EstadoEntidad",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 76,
+   "endLine": 83
+  },
+  {
+   "id": "EstudianteCrearDto",
+   "name": "EstudianteCrearDto",
+   "packageName": "com.universidad.application.dto.estudiante",
+   "declaredKind": "record",
+   "category": "record",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "codigo",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nombre",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "correo",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "celular",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "direccion",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 85,
+   "endLine": 91
+  },
+  {
+   "id": "EstudianteDto",
+   "name": "EstudianteDto",
+   "packageName": "com.universidad.application.dto.estudiante",
+   "declaredKind": "record",
+   "category": "record",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "id",
+     "type": "UUID",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "codigo",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nombre",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "correo",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "celular",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "direccion",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "estado",
+     "type": "EstadoEntidad",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "activo",
+     "type": "boolean",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 93,
+   "endLine": 102
+  },
+  {
+   "id": "ProfesorActualizarDto",
+   "name": "ProfesorActualizarDto",
+   "packageName": "com.universidad.application.dto.profesor",
+   "declaredKind": "record",
+   "category": "record",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "id",
+     "type": "Long",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nuevoNombre",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nuevoCelular",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nuevoEstado",
+     "type": "Integer",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "obtenerEstadoComoEnum",
+     "returnType": "EstadoEntidad",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 107,
+   "endLine": 113
+  },
+  {
+   "id": "ProfesorCrearDto",
+   "name": "ProfesorCrearDto",
+   "packageName": "com.universidad.application.dto.profesor",
+   "declaredKind": "record",
+   "category": "record",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "nombre",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "celular",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 115,
+   "endLine": 118
+  },
+  {
+   "id": "ProfesorDto",
+   "name": "ProfesorDto",
+   "packageName": "com.universidad.application.dto.profesor",
+   "declaredKind": "record",
+   "category": "record",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "id",
+     "type": "Long",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nombre",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "celular",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "estado",
+     "type": "EstadoEntidad",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "activo",
+     "type": "Boolean",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 120,
+   "endLine": 126
+  },
+  {
+   "id": "ReglasValidacion",
+   "name": "ReglasValidacion",
+   "packageName": "com.universidad.application.dto.validacion",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "limpiarRequerido",
+     "returnType": "String",
+     "parameters": [
+      {
+       "name": "valor",
+       "type": "String"
+      },
+      {
+       "name": "mensajeError",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "limpiarUuidRequerido",
+     "returnType": "UUID",
+     "parameters": [
+      {
+       "name": "valor",
+       "type": "UUID"
+      },
+      {
+       "name": "mensajeError",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "limpiarEnteroRequerido",
+     "returnType": "Integer",
+     "parameters": [
+      {
+       "name": "valor",
+       "type": "Integer"
+      },
+      {
+       "name": "mensajeError",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "limpiarLongRequerido",
+     "returnType": "Long",
+     "parameters": [
+      {
+       "name": "valor",
+       "type": "Long"
+      },
+      {
+       "name": "mensajeError",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "limpiarCorreo",
+     "returnType": "String",
+     "parameters": [
+      {
+       "name": "correo",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "limpiarCelular",
+     "returnType": "String",
+     "parameters": [
+      {
+       "name": "celular",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "limpiarEnteroEnRango",
+     "returnType": "Integer",
+     "parameters": [
+      {
+       "name": "valor",
+       "type": "Integer"
+      },
+      {
+       "name": "min",
+       "type": "int"
+      },
+      {
+       "name": "max",
+       "type": "int"
+      },
+      {
+       "name": "mensajeError",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "limpiarEnteroPositivo",
+     "returnType": "Integer",
+     "parameters": [
+      {
+       "name": "valor",
+       "type": "Integer"
+      },
+      {
+       "name": "mensajeError",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "limpiarBigDecimalPositivo",
+     "returnType": "BigDecimal",
+     "parameters": [
+      {
+       "name": "valor",
+       "type": "BigDecimal"
+      },
+      {
+       "name": "mensajeError",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "limpiarBigDecimalNoNegativo",
+     "returnType": "BigDecimal",
+     "parameters": [
+      {
+       "name": "valor",
+       "type": "BigDecimal"
+      },
+      {
+       "name": "mensajeError",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "limpiarListaRequerida",
+     "returnType": "List<T>",
+     "parameters": [
+      {
+       "name": "lista",
+       "type": "List<T>"
+      },
+      {
+       "name": "mensajeError",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": true,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "ReglasValidacion",
+     "parameters": [],
+     "visibility": "-"
+    }
+   ],
+   "enumConstants": [],
+   "line": 131,
+   "endLine": 144
+  },
+  {
+   "id": "AsignaturaMapeador",
+   "name": "AsignaturaMapeador",
+   "packageName": "com.universidad.application.mapper",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "toDto",
+     "returnType": "AsignaturaCostoDto",
+     "parameters": [
+      {
+       "name": "entidad",
+       "type": "AsignaturaCosto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "toDtoList",
+     "returnType": "List<AsignaturaCostoDto>",
+     "parameters": [
+      {
+       "name": "entidades",
+       "type": "List<AsignaturaCosto>"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "AsignaturaMapeador",
+     "parameters": [],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 149,
+   "endLine": 153
+  },
+  {
+   "id": "CursoMapeador",
+   "name": "CursoMapeador",
+   "packageName": "com.universidad.application.mapper",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "toDto",
+     "returnType": "CursoDto",
+     "parameters": [
+      {
+       "name": "entidad",
+       "type": "Curso"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "toDtoList",
+     "returnType": "List<CursoDto>",
+     "parameters": [
+      {
+       "name": "entidades",
+       "type": "List<Curso>"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 155,
+   "endLine": 158
+  },
+  {
+   "id": "EstudianteMapeador",
+   "name": "EstudianteMapeador",
+   "packageName": "com.universidad.application.mapper",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "toDto",
+     "returnType": "EstudianteDto",
+     "parameters": [
+      {
+       "name": "entidad",
+       "type": "Estudiante"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "toDtoList",
+     "returnType": "List<EstudianteDto>",
+     "parameters": [
+      {
+       "name": "entidades",
+       "type": "List<Estudiante>"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 160,
+   "endLine": 163
+  },
+  {
+   "id": "Mapeador",
+   "name": "Mapeador",
+   "packageName": "com.universidad.application.mapper",
+   "declaredKind": "interface",
+   "category": "interface",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "toDto",
+     "returnType": "R",
+     "parameters": [
+      {
+       "name": "entidad",
+       "type": "E"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "toDtoList",
+     "returnType": "List<R>",
+     "parameters": [
+      {
+       "name": "entidades",
+       "type": "List<E>"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 165,
+   "endLine": 168
+  },
+  {
+   "id": "ProfesorMapeador",
+   "name": "ProfesorMapeador",
+   "packageName": "com.universidad.application.mapper",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "toDto",
+     "returnType": "ProfesorDto",
+     "parameters": [
+      {
+       "name": "entidad",
+       "type": "Profesor"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "toDtoList",
+     "returnType": "List<ProfesorDto>",
+     "parameters": [
+      {
+       "name": "entidades",
+       "type": "List<Profesor>"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "ProfesorMapeador",
+     "parameters": [],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 170,
+   "endLine": 174
+  },
+  {
+   "id": "AsignaturaServicioPort",
+   "name": "AsignaturaServicioPort",
+   "packageName": "com.universidad.application.port",
+   "declaredKind": "interface",
+   "category": "interface",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "registrarAsignatura",
+     "returnType": "AsignaturaCostoDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "AsignaturaCostoCrearDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "obtenerAsignaturas",
+     "returnType": "List<AsignaturaCostoDto>",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "contarAsignaturas",
+     "returnType": "int",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 179,
+   "endLine": 183
+  },
+  {
+   "id": "CursoServicioPort",
+   "name": "CursoServicioPort",
+   "packageName": "com.universidad.application.port",
+   "declaredKind": "interface",
+   "category": "interface",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "registrarCurso",
+     "returnType": "CursoDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "CursoCrearDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "obtenerCursos",
+     "returnType": "List<CursoDto>",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "contarCursos",
+     "returnType": "long",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarCurso",
+     "returnType": "CursoDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "CursoActualizarDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "eliminarCurso",
+     "returnType": "boolean",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "UUID"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 185,
+   "endLine": 191
+  },
+  {
+   "id": "EstudianteServicioPort",
+   "name": "EstudianteServicioPort",
+   "packageName": "com.universidad.application.port",
+   "declaredKind": "interface",
+   "category": "interface",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "registrarEstudiante",
+     "returnType": "EstudianteDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "EstudianteCrearDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "obtenerEstudiantes",
+     "returnType": "List<EstudianteDto>",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "contarEstudiantes",
+     "returnType": "long",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarEstudiante",
+     "returnType": "EstudianteDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "EstudianteActualizarDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "eliminarEstudiante",
+     "returnType": "boolean",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "UUID"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 193,
+   "endLine": 199
+  },
+  {
+   "id": "ProfesorServicioPort",
+   "name": "ProfesorServicioPort",
+   "packageName": "com.universidad.application.port",
+   "declaredKind": "interface",
+   "category": "interface",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "registrarProfesor",
+     "returnType": "ProfesorDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "ProfesorCrearDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "obtenerProfesores",
+     "returnType": "List<ProfesorDto>",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "contarProfesores",
+     "returnType": "int",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarProfesor",
+     "returnType": "ProfesorDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "ProfesorActualizarDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "eliminarProfesor",
+     "returnType": "boolean",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "Long"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 201,
+   "endLine": 207
+  },
+  {
+   "id": "AsignaturaServicio",
+   "name": "AsignaturaServicio",
+   "packageName": "com.universidad.application.service",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "mapeador",
+     "type": "AsignaturaMapeador",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "repositorio",
+     "type": "AsignaturaRepositorio",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "registrarAsignatura",
+     "returnType": "AsignaturaCostoDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "AsignaturaCostoCrearDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "obtenerAsignaturas",
+     "returnType": "List<AsignaturaCostoDto>",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "contarAsignaturas",
+     "returnType": "int",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "AsignaturaServicio",
+     "parameters": [
+      {
+       "name": "mapeador",
+       "type": "AsignaturaMapeador"
+      },
+      {
+       "name": "repositorio",
+       "type": "AsignaturaRepositorio"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 212,
+   "endLine": 219
+  },
+  {
+   "id": "CursoServicio",
+   "name": "CursoServicio",
+   "packageName": "com.universidad.application.service",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "mapeador",
+     "type": "CursoMapeador",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "repositorio",
+     "type": "CursoRepositorio",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "registrarCurso",
+     "returnType": "CursoDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "CursoCrearDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "obtenerCursos",
+     "returnType": "List<CursoDto>",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "contarCursos",
+     "returnType": "long",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarCurso",
+     "returnType": "CursoDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "CursoActualizarDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "eliminarCurso",
+     "returnType": "boolean",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "UUID"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "CursoServicio",
+     "parameters": [
+      {
+       "name": "mapeador",
+       "type": "CursoMapeador"
+      },
+      {
+       "name": "repositorio",
+       "type": "CursoRepositorio"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 221,
+   "endLine": 230
+  },
+  {
+   "id": "EstudianteServicio",
+   "name": "EstudianteServicio",
+   "packageName": "com.universidad.application.service",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "mapeador",
+     "type": "EstudianteMapeador",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "repositorio",
+     "type": "EstudianteRepositorio",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "registrarEstudiante",
+     "returnType": "EstudianteDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "EstudianteCrearDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "obtenerEstudiantes",
+     "returnType": "List<EstudianteDto>",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "contarEstudiantes",
+     "returnType": "long",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarEstudiante",
+     "returnType": "EstudianteDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "EstudianteActualizarDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "eliminarEstudiante",
+     "returnType": "boolean",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "UUID"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "EstudianteServicio",
+     "parameters": [
+      {
+       "name": "mapeador",
+       "type": "EstudianteMapeador"
+      },
+      {
+       "name": "repositorio",
+       "type": "EstudianteRepositorio"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 232,
+   "endLine": 241
+  },
+  {
+   "id": "ProfesorServicio",
+   "name": "ProfesorServicio",
+   "packageName": "com.universidad.application.service",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "mapeador",
+     "type": "ProfesorMapeador",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "repositorio",
+     "type": "ProfesorRepositorio",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "registrarProfesor",
+     "returnType": "ProfesorDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "ProfesorCrearDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "obtenerProfesores",
+     "returnType": "List<ProfesorDto>",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "contarProfesores",
+     "returnType": "int",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarProfesor",
+     "returnType": "ProfesorDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "ProfesorActualizarDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "eliminarProfesor",
+     "returnType": "boolean",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "Long"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "ProfesorServicio",
+     "parameters": [
+      {
+       "name": "mapeador",
+       "type": "ProfesorMapeador"
+      },
+      {
+       "name": "repositorio",
+       "type": "ProfesorRepositorio"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 243,
+   "endLine": 252
+  },
+  {
+   "id": "AsignaturaCosto",
+   "name": "AsignaturaCosto",
+   "packageName": "com.universidad.domain.model",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "idAsignaturaCosto",
+     "type": "Integer",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nombreAsignatura",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "semanasDuracion",
+     "type": "Short",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "costoBase",
+     "type": "BigDecimal",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "estadoAsignatura",
+     "type": "EstadoEntidad",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "actualizarNombre",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "nuevoNombre",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarSemanas",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "nuevasSemanas",
+       "type": "Short"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarCosto",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "nuevoCosto",
+       "type": "BigDecimal"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "suspender",
+     "returnType": "void",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "reactivar",
+     "returnType": "void",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "estaActiva",
+     "returnType": "boolean",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getIdAsignaturaCosto",
+     "returnType": "Integer",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getNombreAsignatura",
+     "returnType": "String",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getSemanasDuracion",
+     "returnType": "Short",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getCostoBase",
+     "returnType": "BigDecimal",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getEstadoAsignatura",
+     "returnType": "EstadoEntidad",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "AsignaturaCosto",
+     "parameters": [],
+     "visibility": "#"
+    },
+    {
+     "name": "AsignaturaCosto",
+     "parameters": [
+      {
+       "name": "nombreAsignatura",
+       "type": "String"
+      },
+      {
+       "name": "semanasDuracion",
+       "type": "Short"
+      },
+      {
+       "name": "costoBase",
+       "type": "BigDecimal"
+      }
+     ],
+     "visibility": "+"
+    },
+    {
+     "name": "AsignaturaCosto",
+     "parameters": [
+      {
+       "name": "idAsignaturaCosto",
+       "type": "Integer"
+      },
+      {
+       "name": "nombreAsignatura",
+       "type": "String"
+      },
+      {
+       "name": "semanasDuracion",
+       "type": "Short"
+      },
+      {
+       "name": "costoBase",
+       "type": "BigDecimal"
+      },
+      {
+       "name": "estadoAsignatura",
+       "type": "EstadoEntidad"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 257,
+   "endLine": 277
+  },
+  {
+   "id": "Curso",
+   "name": "Curso",
+   "packageName": "com.universidad.domain.model",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "idCurso",
+     "type": "UUID",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "codigoCurso",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nombreCurso",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "creditosCurso",
+     "type": "Integer",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "cupoMaximoCurso",
+     "type": "Integer",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "estadoCurso",
+     "type": "EstadoEntidad",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "actualizarNombre",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "nuevoNombre",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarCupo",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "nuevoCupo",
+       "type": "Integer"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "cambiarEstado",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "nuevoEstado",
+       "type": "EstadoEntidad"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "estaActivo",
+     "returnType": "boolean",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getIdCurso",
+     "returnType": "UUID",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getCodigoCurso",
+     "returnType": "String",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getNombreCurso",
+     "returnType": "String",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getCreditosCurso",
+     "returnType": "Integer",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getCupoMaximoCurso",
+     "returnType": "Integer",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getEstadoCurso",
+     "returnType": "EstadoEntidad",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "Curso",
+     "parameters": [],
+     "visibility": "#"
+    },
+    {
+     "name": "Curso",
+     "parameters": [
+      {
+       "name": "codigoCurso",
+       "type": "String"
+      },
+      {
+       "name": "nombreCurso",
+       "type": "String"
+      },
+      {
+       "name": "creditosCurso",
+       "type": "Integer"
+      },
+      {
+       "name": "cupoMaximoCurso",
+       "type": "Integer"
+      }
+     ],
+     "visibility": "+"
+    },
+    {
+     "name": "Curso",
+     "parameters": [
+      {
+       "name": "idCurso",
+       "type": "UUID"
+      },
+      {
+       "name": "codigoCurso",
+       "type": "String"
+      },
+      {
+       "name": "nombreCurso",
+       "type": "String"
+      },
+      {
+       "name": "creditosCurso",
+       "type": "Integer"
+      },
+      {
+       "name": "cupoMaximoCurso",
+       "type": "Integer"
+      },
+      {
+       "name": "estadoCurso",
+       "type": "EstadoEntidad"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 279,
+   "endLine": 299
+  },
+  {
+   "id": "Estudiante",
+   "name": "Estudiante",
+   "packageName": "com.universidad.domain.model",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "idEstudiante",
+     "type": "UUID",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "codigoEstudiante",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nombreEstudiante",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "direccionEstudiante",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "correoEstudiante",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "celularEstudiante",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "estadoEstudiante",
+     "type": "EstadoEntidad",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "actualizarCorreo",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "nuevoCorreo",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarCelular",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "nuevoCelular",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarDireccion",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "nuevaDireccion",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "cambiarEstado",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "nuevoEstado",
+       "type": "EstadoEntidad"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "estaActivo",
+     "returnType": "boolean",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getIdEstudiante",
+     "returnType": "UUID",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getCodigoEstudiante",
+     "returnType": "String",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getNombreEstudiante",
+     "returnType": "String",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getDireccionEstudiante",
+     "returnType": "String",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getCorreoEstudiante",
+     "returnType": "String",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getCelularEstudiante",
+     "returnType": "String",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getEstadoEstudiante",
+     "returnType": "EstadoEntidad",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "Estudiante",
+     "parameters": [],
+     "visibility": "#"
+    },
+    {
+     "name": "Estudiante",
+     "parameters": [
+      {
+       "name": "codigoEstudiante",
+       "type": "String"
+      },
+      {
+       "name": "nombreEstudiante",
+       "type": "String"
+      },
+      {
+       "name": "correoEstudiante",
+       "type": "String"
+      },
+      {
+       "name": "celularEstudiante",
+       "type": "String"
+      },
+      {
+       "name": "direccionEstudiante",
+       "type": "String"
+      }
+     ],
+     "visibility": "+"
+    },
+    {
+     "name": "Estudiante",
+     "parameters": [
+      {
+       "name": "idEstudiante",
+       "type": "UUID"
+      },
+      {
+       "name": "codigoEstudiante",
+       "type": "String"
+      },
+      {
+       "name": "nombreEstudiante",
+       "type": "String"
+      },
+      {
+       "name": "correoEstudiante",
+       "type": "String"
+      },
+      {
+       "name": "celularEstudiante",
+       "type": "String"
+      },
+      {
+       "name": "direccionEstudiante",
+       "type": "String"
+      },
+      {
+       "name": "estadoEstudiante",
+       "type": "EstadoEntidad"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 301,
+   "endLine": 324
+  },
+  {
+   "id": "Profesor",
+   "name": "Profesor",
+   "packageName": "com.universidad.domain.model",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "idProfesor",
+     "type": "Long",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nombreProfesor",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "celularProfesor",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "estadoProfesor",
+     "type": "EstadoEntidad",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "actualizarNombre",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "nuevoNombre",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarCelular",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "nuevoCelular",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "cambiarEstado",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "nuevoEstado",
+       "type": "EstadoEntidad"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "estaActivo",
+     "returnType": "boolean",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getIdProfesor",
+     "returnType": "Long",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getNombreProfesor",
+     "returnType": "String",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getCelularProfesor",
+     "returnType": "String",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getEstadoProfesor",
+     "returnType": "EstadoEntidad",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "Profesor",
+     "parameters": [],
+     "visibility": "#"
+    },
+    {
+     "name": "Profesor",
+     "parameters": [
+      {
+       "name": "nombreProfesor",
+       "type": "String"
+      },
+      {
+       "name": "celularProfesor",
+       "type": "String"
+      }
+     ],
+     "visibility": "+"
+    },
+    {
+     "name": "Profesor",
+     "parameters": [
+      {
+       "name": "idProfesor",
+       "type": "Long"
+      },
+      {
+       "name": "nombreProfesor",
+       "type": "String"
+      },
+      {
+       "name": "celularProfesor",
+       "type": "String"
+      },
+      {
+       "name": "estadoProfesor",
+       "type": "EstadoEntidad"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 326,
+   "endLine": 342
+  },
+  {
+   "id": "PoliticasAcademicas",
+   "name": "PoliticasAcademicas",
+   "packageName": "com.universidad.domain.model.constante",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "MIN_SEMANAS_ASIGNATURA",
+     "type": "int",
+     "visibility": "+",
+     "isStatic": true
+    },
+    {
+     "name": "MAX_SEMANAS_ASIGNATURA",
+     "type": "int",
+     "visibility": "+",
+     "isStatic": true
+    },
+    {
+     "name": "MIN_CUPO_MATERIA",
+     "type": "int",
+     "visibility": "+",
+     "isStatic": true
+    },
+    {
+     "name": "MAX_CUPO_MATERIA",
+     "type": "int",
+     "visibility": "+",
+     "isStatic": true
+    }
+   ],
+   "methods": [],
+   "constructors": [
+    {
+     "name": "PoliticasAcademicas",
+     "parameters": [],
+     "visibility": "-"
+    }
+   ],
+   "enumConstants": [],
+   "line": 347,
+   "endLine": 353
+  },
+  {
+   "id": "EstadoEntidad",
+   "name": "EstadoEntidad",
+   "packageName": "com.universidad.domain.model.enumeracion",
+   "declaredKind": "enum",
+   "category": "enum",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "code",
+     "type": "int",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "description",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "getCode",
+     "returnType": "int",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getDescription",
+     "returnType": "String",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "cambiarEstadoA",
+     "returnType": "EstadoEntidad",
+     "parameters": [
+      {
+       "name": "nuevoEstado",
+       "type": "EstadoEntidad"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "EstadoEntidad",
+     "parameters": [
+      {
+       "name": "code",
+       "type": "int"
+      },
+      {
+       "name": "description",
+       "type": "String"
+      }
+     ],
+     "visibility": "~"
+    }
+   ],
+   "enumConstants": [
+    "ACTIVO",
+    "INACTIVO"
+   ],
+   "line": 358,
+   "endLine": 367
+  },
+  {
+   "id": "AsignaturaRepositorio",
+   "name": "AsignaturaRepositorio",
+   "packageName": "com.universidad.domain.repository",
+   "declaredKind": "interface",
+   "category": "interface",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 372,
+   "endLine": 373
+  },
+  {
+   "id": "CursoRepositorio",
+   "name": "CursoRepositorio",
+   "packageName": "com.universidad.domain.repository",
+   "declaredKind": "interface",
+   "category": "interface",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 375,
+   "endLine": 376
+  },
+  {
+   "id": "EstudianteRepositorio",
+   "name": "EstudianteRepositorio",
+   "packageName": "com.universidad.domain.repository",
+   "declaredKind": "interface",
+   "category": "interface",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 378,
+   "endLine": 379
+  },
+  {
+   "id": "ProfesorRepositorio",
+   "name": "ProfesorRepositorio",
+   "packageName": "com.universidad.domain.repository",
+   "declaredKind": "interface",
+   "category": "interface",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 381,
+   "endLine": 382
+  },
+  {
+   "id": "RepositorioBase",
+   "name": "RepositorioBase",
+   "packageName": "com.universidad.domain.repository",
+   "declaredKind": "interface",
+   "category": "interface",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "guardar",
+     "returnType": "T",
+     "parameters": [
+      {
+       "name": "entidad",
+       "type": "T"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizar",
+     "returnType": "T",
+     "parameters": [
+      {
+       "name": "entidad",
+       "type": "T"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "buscarPorId",
+     "returnType": "Optional<T>",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "ID"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "eliminar",
+     "returnType": "boolean",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "ID"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "listarTodos",
+     "returnType": "List<T>",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "contar",
+     "returnType": "long",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "cerrar",
+     "returnType": "void",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 384,
+   "endLine": 392
+  },
+  {
+   "id": "CargadorDatos",
+   "name": "CargadorDatos",
+   "packageName": "com.universidad.domain.repository.cargador",
+   "declaredKind": "interface",
+   "category": "interface",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "cargarTodos",
+     "returnType": "void",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "cargarPorIds",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "ids",
+       "type": "List<ID>"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "registrarEnCache",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "entidad",
+       "type": "T"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "obtener",
+     "returnType": "Optional<T>",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "ID"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "existe",
+     "returnType": "boolean",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "ID"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 397,
+   "endLine": 403
+  },
+  {
+   "id": "ProfesorCargador",
+   "name": "ProfesorCargador",
+   "packageName": "com.universidad.domain.repository.cargador",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "cache",
+     "type": "Map<Long,Profesor>",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "repositorio",
+     "type": "ProfesorRepositorio",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "cargarTodos",
+     "returnType": "void",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "cargarPorIds",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "ids",
+       "type": "List<Long>"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "registrarEnCache",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "entidad",
+       "type": "Profesor"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "obtener",
+     "returnType": "Optional<Profesor>",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "Long"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "existe",
+     "returnType": "boolean",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "Long"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "ProfesorCargador",
+     "parameters": [
+      {
+       "name": "repositorio",
+       "type": "ProfesorRepositorio"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 405,
+   "endLine": 414
+  },
+  {
+   "id": "AsignaturaVista",
+   "name": "AsignaturaVista",
+   "packageName": "com.universidad.infrastructure.cli",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "ANCHO_TABLA",
+     "type": "int",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "controlador",
+     "type": "AsignaturaControlador",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "columnasTablaMateria",
+     "type": "List<TableColumn>",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "getModuleName",
+     "returnType": "String",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "execute",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "mostrarMenu",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "listarAsignatura",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "textoEstado",
+     "returnType": "String",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "AsignaturaCostoDto"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "extraerDatosAsignatura",
+     "returnType": "Object[]",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "AsignaturaCostoDto"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "crearAsignatura",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "AsignaturaVista",
+     "parameters": [
+      {
+       "name": "controlador",
+       "type": "AsignaturaControlador"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 419,
+   "endLine": 431
+  },
+  {
+   "id": "CursoVista",
+   "name": "CursoVista",
+   "packageName": "com.universidad.infrastructure.cli",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "ANCHO_TABLA",
+     "type": "int",
+     "visibility": "-",
+     "isStatic": true
+    },
+    {
+     "name": "controlador",
+     "type": "CursoControlador",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "columnas",
+     "type": "List<TableColumn>",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "getModuleName",
+     "returnType": "String",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "execute",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "mostrarMenu",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "extraerDatos",
+     "returnType": "Object[]",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "CursoDto"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "crearCurso",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "listarCursos",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarCurso",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "eliminarCurso",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "leerEnteroOpcional",
+     "returnType": "Integer",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "mensaje",
+       "type": "String"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "CursoVista",
+     "parameters": [
+      {
+       "name": "controlador",
+       "type": "CursoControlador"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 433,
+   "endLine": 447
+  },
+  {
+   "id": "EstudianteVista",
+   "name": "EstudianteVista",
+   "packageName": "com.universidad.infrastructure.cli",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "ANCHO_TABLA",
+     "type": "int",
+     "visibility": "-",
+     "isStatic": true
+    },
+    {
+     "name": "controlador",
+     "type": "EstudianteControlador",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "columnas",
+     "type": "List<TableColumn>",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "getModuleName",
+     "returnType": "String",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "execute",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "mostrarMenu",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "extraerDatos",
+     "returnType": "Object[]",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "EstudianteDto"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "crearEstudiante",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "listarEstudiantes",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarEstudiante",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "eliminarEstudiante",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "leerEnteroOpcional",
+     "returnType": "Integer",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "mensaje",
+       "type": "String"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "EstudianteVista",
+     "parameters": [
+      {
+       "name": "controlador",
+       "type": "EstudianteControlador"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 449,
+   "endLine": 463
+  },
+  {
+   "id": "ProfesorVista",
+   "name": "ProfesorVista",
+   "packageName": "com.universidad.infrastructure.cli",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "ANCHO_TABLA",
+     "type": "int",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "controlador",
+     "type": "ProfesorControlador",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "columnasTablaProfe",
+     "type": "List<TableColumn>",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "getModuleName",
+     "returnType": "String",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "execute",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "cnsl",
+       "type": "Console"
+      },
+      {
+       "name": "sf",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "tr",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "mostrarMenu",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "textoEstado",
+     "returnType": "String",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "ProfesorDto"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "extraerDatosProfesor",
+     "returnType": "Object[]",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "ProfesorDto"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "listarProfes",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "crearProfe",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarProfesor",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "formatter",
+       "type": "ScreenFormatter"
+      },
+      {
+       "name": "renderer",
+       "type": "TableRenderer"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "eliminarProfesor",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "leerEnteroOpcional",
+     "returnType": "Integer",
+     "parameters": [
+      {
+       "name": "console",
+       "type": "Console"
+      },
+      {
+       "name": "mensaje",
+       "type": "String"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "ProfesorVista",
+     "parameters": [
+      {
+       "name": "controlador",
+       "type": "ProfesorControlador"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 465,
+   "endLine": 480
+  },
+  {
+   "id": "ConfiguracionCli",
+   "name": "ConfiguracionCli",
+   "packageName": "com.universidad.infrastructure.cli.constante",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "TITULO_SISTEMA",
+     "type": "String",
+     "visibility": "+",
+     "isStatic": true
+    },
+    {
+     "name": "MENSAJE_SALIDA",
+     "type": "String",
+     "visibility": "+",
+     "isStatic": true
+    },
+    {
+     "name": "CARACTER_SEPARADOR",
+     "type": "String",
+     "visibility": "+",
+     "isStatic": true
+    },
+    {
+     "name": "LONGITUD_SEPARADOR",
+     "type": "int",
+     "visibility": "+",
+     "isStatic": true
+    },
+    {
+     "name": "PREFIJO_ERROR",
+     "type": "String",
+     "visibility": "+",
+     "isStatic": true
+    },
+    {
+     "name": "TEXTO_NULO",
+     "type": "String",
+     "visibility": "+",
+     "isStatic": true
+    },
+    {
+     "name": "TEXTO_SI",
+     "type": "String",
+     "visibility": "+",
+     "isStatic": true
+    },
+    {
+     "name": "TEXTO_NO",
+     "type": "String",
+     "visibility": "+",
+     "isStatic": true
+    },
+    {
+     "name": "FORMATO_FECHA_ENTRADA",
+     "type": "String",
+     "visibility": "+",
+     "isStatic": true
+    },
+    {
+     "name": "FORMATO_FECHA_VISUAL",
+     "type": "String",
+     "visibility": "+",
+     "isStatic": true
+    },
+    {
+     "name": "FORMATO_FECHA_HORA_VISUAL",
+     "type": "String",
+     "visibility": "+",
+     "isStatic": true
+    },
+    {
+     "name": "LOCALE",
+     "type": "Locale",
+     "visibility": "+",
+     "isStatic": true
+    }
+   ],
+   "methods": [],
+   "constructors": [
+    {
+     "name": "ConfiguracionCli",
+     "parameters": [],
+     "visibility": "-"
+    }
+   ],
+   "enumConstants": [],
+   "line": 485,
+   "endLine": 499
+  },
+  {
+   "id": "ConfiguracionDeDependencias",
+   "name": "ConfiguracionDeDependencias",
+   "packageName": "com.universidad.infrastructure.config",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "modulos",
+     "type": "List<SystemModule>",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "modulosConfigurados",
+     "type": "List<ModuloConfigurable>",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "getModulos",
+     "returnType": "List<SystemModule>",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "close",
+     "returnType": "void",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "ConfiguracionDeDependencias",
+     "parameters": [],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 504,
+   "endLine": 510
+  },
+  {
+   "id": "RutaPersistencia",
+   "name": "RutaPersistencia",
+   "packageName": "com.universidad.infrastructure.config",
+   "declaredKind": "enum",
+   "category": "enum",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "ruta",
+     "type": "Path",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "obtenerRuta",
+     "returnType": "Path",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "RutaPersistencia",
+     "parameters": [
+      {
+       "name": "nombreArchivo",
+       "type": "String"
+      }
+     ],
+     "visibility": "~"
+    }
+   ],
+   "enumConstants": [
+    "PROFESORES",
+    "ESTUDIANTES",
+    "CURSOS",
+    "ASIGNATURAS"
+   ],
+   "line": 512,
+   "endLine": 520
+  },
+  {
+   "id": "ConfiguracionModuloAsignatura",
+   "name": "ConfiguracionModuloAsignatura",
+   "packageName": "com.universidad.infrastructure.config.modulos",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "repositorio",
+     "type": "AsignaturaRepositorio",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "servicio",
+     "type": "AsignaturaServicio",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "getRepositorio",
+     "returnType": "AsignaturaRepositorio",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getServicio",
+     "returnType": "AsignaturaServicio",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "construirVista",
+     "returnType": "SystemModule",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "cerrarRecursos",
+     "returnType": "void",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "ConfiguracionModuloAsignatura",
+     "parameters": [],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 525,
+   "endLine": 533
+  },
+  {
+   "id": "ConfiguracionModuloCurso",
+   "name": "ConfiguracionModuloCurso",
+   "packageName": "com.universidad.infrastructure.config.modulos",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "repositorio",
+     "type": "CursoRepositorio",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "servicio",
+     "type": "CursoServicio",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "getRepositorio",
+     "returnType": "CursoRepositorio",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getServicio",
+     "returnType": "CursoServicio",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "construirVista",
+     "returnType": "SystemModule",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "cerrarRecursos",
+     "returnType": "void",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "ConfiguracionModuloCurso",
+     "parameters": [],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 535,
+   "endLine": 543
+  },
+  {
+   "id": "ConfiguracionModuloEstudiante",
+   "name": "ConfiguracionModuloEstudiante",
+   "packageName": "com.universidad.infrastructure.config.modulos",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "repositorio",
+     "type": "EstudianteRepositorio",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "servicio",
+     "type": "EstudianteServicio",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "getRepositorio",
+     "returnType": "EstudianteRepositorio",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getServicio",
+     "returnType": "EstudianteServicio",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "construirVista",
+     "returnType": "SystemModule",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "cerrarRecursos",
+     "returnType": "void",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "ConfiguracionModuloEstudiante",
+     "parameters": [],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 545,
+   "endLine": 553
+  },
+  {
+   "id": "ConfiguracionModuloProfesor",
+   "name": "ConfiguracionModuloProfesor",
+   "packageName": "com.universidad.infrastructure.config.modulos",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "repositorio",
+     "type": "ProfesorRepositorio",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "servicio",
+     "type": "ProfesorServicio",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "getRepositorio",
+     "returnType": "ProfesorRepositorio",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getServicio",
+     "returnType": "ProfesorServicio",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "construirVista",
+     "returnType": "SystemModule",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "cerrarRecursos",
+     "returnType": "void",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "ConfiguracionModuloProfesor",
+     "parameters": [],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 555,
+   "endLine": 563
+  },
+  {
+   "id": "ModuloConfigurable",
+   "name": "ModuloConfigurable",
+   "packageName": "com.universidad.infrastructure.config.modulos",
+   "declaredKind": "interface",
+   "category": "interface",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "construirVista",
+     "returnType": "SystemModule",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "cerrarRecursos",
+     "returnType": "void",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 565,
+   "endLine": 568
+  },
+  {
+   "id": "AsignaturaRepositorioImpl",
+   "name": "AsignaturaRepositorioImpl",
+   "packageName": "com.universidad.infrastructure.persistence",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [],
+   "constructors": [
+    {
+     "name": "AsignaturaRepositorioImpl",
+     "parameters": [
+      {
+       "name": "tpaRepository",
+       "type": "TpaRepository<AsignaturaCosto,Integer>"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 573,
+   "endLine": 575
+  },
+  {
+   "id": "CursoRepositorioImpl",
+   "name": "CursoRepositorioImpl",
+   "packageName": "com.universidad.infrastructure.persistence",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "permiteBorradoFisico",
+     "returnType": "boolean",
+     "parameters": [],
+     "visibility": "#",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "CursoRepositorioImpl",
+     "parameters": [
+      {
+       "name": "tpaRepository",
+       "type": "TpaRepository<Curso,UUID>"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 577,
+   "endLine": 580
+  },
+  {
+   "id": "EstudianteRepositorioImpl",
+   "name": "EstudianteRepositorioImpl",
+   "packageName": "com.universidad.infrastructure.persistence",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "permiteBorradoFisico",
+     "returnType": "boolean",
+     "parameters": [],
+     "visibility": "#",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "EstudianteRepositorioImpl",
+     "parameters": [
+      {
+       "name": "tpaRepository",
+       "type": "TpaRepository<Estudiante,UUID>"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 582,
+   "endLine": 585
+  },
+  {
+   "id": "ProfesorRepositorioImpl",
+   "name": "ProfesorRepositorioImpl",
+   "packageName": "com.universidad.infrastructure.persistence",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "permiteBorradoFisico",
+     "returnType": "boolean",
+     "parameters": [],
+     "visibility": "#",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "ProfesorRepositorioImpl",
+     "parameters": [
+      {
+       "name": "tpaRepository",
+       "type": "TpaRepository<Profesor,Long>"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 587,
+   "endLine": 590
+  },
+  {
+   "id": "RepositorioBaseAbstracto",
+   "name": "RepositorioBaseAbstracto",
+   "packageName": "com.universidad.infrastructure.persistence",
+   "declaredKind": "abstract",
+   "category": "abstract",
+   "isAbstract": true,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "tpaRepository",
+     "type": "TpaRepository<T,ID>",
+     "visibility": "#",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "permiteBorradoFisico",
+     "returnType": "boolean",
+     "parameters": [],
+     "visibility": "#",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "cerrar",
+     "returnType": "void",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "contar",
+     "returnType": "long",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "listarTodos",
+     "returnType": "List<T>",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "eliminar",
+     "returnType": "boolean",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "ID"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "buscarPorId",
+     "returnType": "Optional<T>",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "ID"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizar",
+     "returnType": "T",
+     "parameters": [
+      {
+       "name": "entidad",
+       "type": "T"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "guardar",
+     "returnType": "T",
+     "parameters": [
+      {
+       "name": "entidad",
+       "type": "T"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "RepositorioBaseAbstracto",
+     "parameters": [
+      {
+       "name": "tpaRepository",
+       "type": "TpaRepository<T,ID>"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 592,
+   "endLine": 603
+  },
+  {
+   "id": "EstadoEntidadConverter",
+   "name": "EstadoEntidadConverter",
+   "packageName": "com.universidad.infrastructure.persistence.convertidor",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "getEnumClass",
+     "returnType": "Class<EstadoEntidad>",
+     "parameters": [],
+     "visibility": "#",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 608,
+   "endLine": 610
+  },
+  {
+   "id": "FechaLocalConverter",
+   "name": "FechaLocalConverter",
+   "packageName": "com.universidad.infrastructure.persistence.convertidor",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "convertToDatabaseColumn",
+     "returnType": "String",
+     "parameters": [
+      {
+       "name": "fecha",
+       "type": "LocalDate"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "convertToEntityAttribute",
+     "returnType": "LocalDate",
+     "parameters": [
+      {
+       "name": "texto",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 612,
+   "endLine": 615
+  },
+  {
+   "id": "AsignaturaControlador",
+   "name": "AsignaturaControlador",
+   "packageName": "com.universidad.interfaceadapters.controller",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "servicio",
+     "type": "AsignaturaServicioPort",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "crearAsignatura",
+     "returnType": "AsignaturaCostoDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "AsignaturaCostoCrearDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "cantidadAsignatura",
+     "returnType": "int",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "listarAsignatura",
+     "returnType": "List<AsignaturaCostoDto>",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "AsignaturaControlador",
+     "parameters": [
+      {
+       "name": "servicio",
+       "type": "AsignaturaServicioPort"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 620,
+   "endLine": 626
+  },
+  {
+   "id": "CursoControlador",
+   "name": "CursoControlador",
+   "packageName": "com.universidad.interfaceadapters.controller",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "servicio",
+     "type": "CursoServicioPort",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "crearCurso",
+     "returnType": "CursoDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "CursoCrearDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "CrearCurso",
+     "returnType": "CursoDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "CursoCrearDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "listarCursos",
+     "returnType": "List<CursoDto>",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "cantidadCursos",
+     "returnType": "long",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarCurso",
+     "returnType": "CursoDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "CursoActualizarDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "eliminarCurso",
+     "returnType": "boolean",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "UUID"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "CursoControlador",
+     "parameters": [
+      {
+       "name": "servicio",
+       "type": "CursoServicioPort"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 628,
+   "endLine": 637
+  },
+  {
+   "id": "EstudianteControlador",
+   "name": "EstudianteControlador",
+   "packageName": "com.universidad.interfaceadapters.controller",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "servicio",
+     "type": "EstudianteServicioPort",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "crearEstudiante",
+     "returnType": "EstudianteDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "EstudianteCrearDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "listarEstudiantes",
+     "returnType": "List<EstudianteDto>",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "cantidadEstudiantes",
+     "returnType": "long",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarEstudiante",
+     "returnType": "EstudianteDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "EstudianteActualizarDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "eliminarEstudiante",
+     "returnType": "boolean",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "UUID"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "EstudianteControlador",
+     "parameters": [
+      {
+       "name": "servicio",
+       "type": "EstudianteServicioPort"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 639,
+   "endLine": 647
+  },
+  {
+   "id": "ProfesorControlador",
+   "name": "ProfesorControlador",
+   "packageName": "com.universidad.interfaceadapters.controller",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "servicio",
+     "type": "ProfesorServicioPort",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "crearProfesor",
+     "returnType": "ProfesorDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "ProfesorCrearDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "cantidadProfesores",
+     "returnType": "int",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "listarProfesores",
+     "returnType": "List<ProfesorDto>",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "actualizarProfesor",
+     "returnType": "ProfesorDto",
+     "parameters": [
+      {
+       "name": "dto",
+       "type": "ProfesorActualizarDto"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "eliminarProfesor",
+     "returnType": "boolean",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "Long"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "ProfesorControlador",
+     "parameters": [
+      {
+       "name": "servicio",
+       "type": "ProfesorServicioPort"
+      }
+     ],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 649,
+   "endLine": 657
+  },
+  {
+   "id": "AppGenerador",
+   "name": "AppGenerador",
+   "packageName": "com.universidad.tools",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [],
+   "methods": [
+    {
+     "name": "resolveSourcePath",
+     "returnType": "String",
+     "parameters": [
+      {
+       "name": "args",
+       "type": "String[]"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "parseVisibility",
+     "returnType": "String",
+     "parameters": [
+      {
+       "name": "modifiers",
+       "type": "List<String>"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "logTrace",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "msg",
+       "type": "String"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "readSelection",
+     "returnType": "List<String>",
+     "parameters": [
+      {
+       "name": "scanner",
+       "type": "Scanner"
+      },
+      {
+       "name": "prompt",
+       "type": "String"
+      },
+      {
+       "name": "items",
+       "type": "List<String>"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "retainKnown",
+     "returnType": "List<String>",
+     "parameters": [
+      {
+       "name": "selected",
+       "type": "List<String>"
+      },
+      {
+       "name": "known",
+       "type": "List<String>"
+      },
+      {
+       "name": "kind",
+       "type": "String"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "reviewRelationships",
+     "returnType": "ProjectModel",
+     "parameters": [
+      {
+       "name": "scanner",
+       "type": "Scanner"
+      },
+      {
+       "name": "originalProject",
+       "type": "ProjectModel"
+      },
+      {
+       "name": "filter",
+       "type": "DiagramFilter"
+      },
+      {
+       "name": "filteredModel",
+       "type": "ProjectModel"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "printTypeCounts",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "classes",
+       "type": "List<ClassModel>"
+      },
+      {
+       "name": "title",
+       "type": "String"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "printResultPackages",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "pkgs",
+       "type": "List<PackageModel>"
+      },
+      {
+       "name": "externalPkgs",
+       "type": "Set<String>"
+      },
+      {
+       "name": "external",
+       "type": "boolean"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "printResultClasses",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "classes",
+       "type": "List<ClassModel>"
+      },
+      {
+       "name": "external",
+       "type": "boolean"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "positionals",
+     "returnType": "String[]",
+     "parameters": [
+      {
+       "name": "args",
+       "type": "String[]"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "parseModule",
+     "returnType": "String",
+     "parameters": [
+      {
+       "name": "args",
+       "type": "String[]"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "parseExcludedPackages",
+     "returnType": "List<String>",
+     "parameters": [
+      {
+       "name": "args",
+       "type": "String[]"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "flagValue",
+     "returnType": "String",
+     "parameters": [
+      {
+       "name": "args",
+       "type": "String[]"
+      },
+      {
+       "name": "flag",
+       "type": "String"
+      },
+      {
+       "name": "missingMessage",
+       "type": "String"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "parseDiagramOptions",
+     "returnType": "DiagramOptions",
+     "parameters": [
+      {
+       "name": "args",
+       "type": "String[]"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "printUsage",
+     "returnType": "void",
+     "parameters": [],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "logOptions",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "options",
+       "type": "DiagramOptions"
+      }
+     ],
+     "visibility": "-",
+     "isStatic": true,
+     "isAbstract": false
+    },
+    {
+     "name": "main",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "args",
+       "type": "String[]"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": true,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [],
+   "enumConstants": [],
+   "line": 662,
+   "endLine": 680
+  },
+  {
+   "id": "MuestraTiposExternos",
+   "name": "MuestraTiposExternos",
+   "packageName": "com.universidad.tools",
+   "declaredKind": "class",
+   "category": "class",
+   "isAbstract": false,
+   "isSealed": false,
+   "isExternal": false,
+   "implicit": false,
+   "stereotypes": [],
+   "attributes": [
+    {
+     "name": "id",
+     "type": "UUID",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "costo",
+     "type": "BigDecimal",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "momento",
+     "type": "OffsetDateTime",
+     "visibility": "-",
+     "isStatic": false
+    },
+    {
+     "name": "nombre",
+     "type": "String",
+     "visibility": "-",
+     "isStatic": false
+    }
+   ],
+   "methods": [
+    {
+     "name": "getId",
+     "returnType": "UUID",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "setId",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "id",
+       "type": "UUID"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getCosto",
+     "returnType": "BigDecimal",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "setCosto",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "costo",
+       "type": "BigDecimal"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getMomento",
+     "returnType": "OffsetDateTime",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "setMomento",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "momento",
+       "type": "OffsetDateTime"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "getNombre",
+     "returnType": "String",
+     "parameters": [],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    },
+    {
+     "name": "setNombre",
+     "returnType": "void",
+     "parameters": [
+      {
+       "name": "nombre",
+       "type": "String"
+      }
+     ],
+     "visibility": "+",
+     "isStatic": false,
+     "isAbstract": false
+    }
+   ],
+   "constructors": [
+    {
+     "name": "MuestraTiposExternos",
+     "parameters": [],
+     "visibility": "+"
+    }
+   ],
+   "enumConstants": [],
+   "line": 682,
+   "endLine": 696
+  }
+ ],
+ "relationships": [
+  {
+   "source": "EstudianteControlador",
+   "target": "EstudianteServicioPort",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 700
+  },
+  {
+   "source": "EstudianteControlador",
+   "target": "EstudianteDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 701
+  },
+  {
+   "source": "EstudianteControlador",
+   "target": "EstudianteCrearDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 702
+  },
+  {
+   "source": "EstudianteControlador",
+   "target": "EstudianteActualizarDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 703
+  },
+  {
+   "source": "AsignaturaControlador",
+   "target": "AsignaturaServicioPort",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 704
+  },
+  {
+   "source": "AsignaturaControlador",
+   "target": "AsignaturaCostoDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 705
+  },
+  {
+   "source": "AsignaturaControlador",
+   "target": "AsignaturaCostoCrearDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 706
+  },
+  {
+   "source": "CursoControlador",
+   "target": "CursoServicioPort",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 707
+  },
+  {
+   "source": "CursoControlador",
+   "target": "CursoDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 708
+  },
+  {
+   "source": "CursoControlador",
+   "target": "CursoCrearDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 709
+  },
+  {
+   "source": "CursoControlador",
+   "target": "CursoActualizarDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 710
+  },
+  {
+   "source": "ProfesorControlador",
+   "target": "ProfesorServicioPort",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 711
+  },
+  {
+   "source": "ProfesorControlador",
+   "target": "ProfesorDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 712
+  },
+  {
+   "source": "ProfesorControlador",
+   "target": "ProfesorCrearDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 713
+  },
+  {
+   "source": "ProfesorControlador",
+   "target": "ProfesorActualizarDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 714
+  },
+  {
+   "source": "CursoRepositorio",
+   "target": "RepositorioBase",
+   "type": "EXTENDS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 715
+  },
+  {
+   "source": "ProfesorRepositorio",
+   "target": "RepositorioBase",
+   "type": "EXTENDS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 716
+  },
+  {
+   "source": "ProfesorCargador",
+   "target": "CargadorDatos",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 717
+  },
+  {
+   "source": "ProfesorCargador",
+   "target": "Profesor",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 718
+  },
+  {
+   "source": "ProfesorCargador",
+   "target": "ProfesorRepositorio",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 719
+  },
+  {
+   "source": "EstudianteRepositorio",
+   "target": "RepositorioBase",
+   "type": "EXTENDS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 720
+  },
+  {
+   "source": "AsignaturaRepositorio",
+   "target": "RepositorioBase",
+   "type": "EXTENDS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 721
+  },
+  {
+   "source": "Estudiante",
+   "target": "EstadoEntidad",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 722
+  },
+  {
+   "source": "Profesor",
+   "target": "EstadoEntidad",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 723
+  },
+  {
+   "source": "AsignaturaCosto",
+   "target": "EstadoEntidad",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 724
+  },
+  {
+   "source": "Curso",
+   "target": "EstadoEntidad",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 725
+  },
+  {
+   "source": "App",
+   "target": "ConfiguracionDeDependencias",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 726
+  },
+  {
+   "source": "CursoServicio",
+   "target": "CursoServicioPort",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 727
+  },
+  {
+   "source": "CursoServicio",
+   "target": "CursoMapeador",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 728
+  },
+  {
+   "source": "CursoServicio",
+   "target": "CursoRepositorio",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 729
+  },
+  {
+   "source": "CursoServicio",
+   "target": "CursoDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 730
+  },
+  {
+   "source": "CursoServicio",
+   "target": "CursoCrearDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 731
+  },
+  {
+   "source": "CursoServicio",
+   "target": "CursoActualizarDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 732
+  },
+  {
+   "source": "ProfesorServicio",
+   "target": "ProfesorServicioPort",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 733
+  },
+  {
+   "source": "ProfesorServicio",
+   "target": "ProfesorMapeador",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 734
+  },
+  {
+   "source": "ProfesorServicio",
+   "target": "ProfesorRepositorio",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 735
+  },
+  {
+   "source": "ProfesorServicio",
+   "target": "ProfesorDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 736
+  },
+  {
+   "source": "ProfesorServicio",
+   "target": "ProfesorCrearDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 737
+  },
+  {
+   "source": "ProfesorServicio",
+   "target": "ProfesorActualizarDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 738
+  },
+  {
+   "source": "AsignaturaServicio",
+   "target": "AsignaturaServicioPort",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 739
+  },
+  {
+   "source": "AsignaturaServicio",
+   "target": "AsignaturaMapeador",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 740
+  },
+  {
+   "source": "AsignaturaServicio",
+   "target": "AsignaturaRepositorio",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 741
+  },
+  {
+   "source": "AsignaturaServicio",
+   "target": "AsignaturaCostoDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 742
+  },
+  {
+   "source": "AsignaturaServicio",
+   "target": "AsignaturaCostoCrearDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 743
+  },
+  {
+   "source": "EstudianteServicio",
+   "target": "EstudianteServicioPort",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 744
+  },
+  {
+   "source": "EstudianteServicio",
+   "target": "EstudianteMapeador",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 745
+  },
+  {
+   "source": "EstudianteServicio",
+   "target": "EstudianteRepositorio",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 746
+  },
+  {
+   "source": "EstudianteServicio",
+   "target": "EstudianteDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 747
+  },
+  {
+   "source": "EstudianteServicio",
+   "target": "EstudianteCrearDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 748
+  },
+  {
+   "source": "EstudianteServicio",
+   "target": "EstudianteActualizarDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 749
+  },
+  {
+   "source": "ProfesorActualizarDto",
+   "target": "EstadoEntidad",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 750
+  },
+  {
+   "source": "ProfesorDto",
+   "target": "EstadoEntidad",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 751
+  },
+  {
+   "source": "CursoActualizarDto",
+   "target": "EstadoEntidad",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 752
+  },
+  {
+   "source": "CursoDto",
+   "target": "EstadoEntidad",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 753
+  },
+  {
+   "source": "AsignaturaCostoDto",
+   "target": "EstadoEntidad",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 754
+  },
+  {
+   "source": "EstudianteActualizarDto",
+   "target": "EstadoEntidad",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 755
+  },
+  {
+   "source": "EstudianteDto",
+   "target": "EstadoEntidad",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 756
+  },
+  {
+   "source": "EstudianteServicioPort",
+   "target": "EstudianteDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 757
+  },
+  {
+   "source": "EstudianteServicioPort",
+   "target": "EstudianteCrearDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 758
+  },
+  {
+   "source": "EstudianteServicioPort",
+   "target": "EstudianteActualizarDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 759
+  },
+  {
+   "source": "AsignaturaServicioPort",
+   "target": "AsignaturaCostoDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 760
+  },
+  {
+   "source": "AsignaturaServicioPort",
+   "target": "AsignaturaCostoCrearDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 761
+  },
+  {
+   "source": "CursoServicioPort",
+   "target": "CursoDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 762
+  },
+  {
+   "source": "CursoServicioPort",
+   "target": "CursoCrearDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 763
+  },
+  {
+   "source": "CursoServicioPort",
+   "target": "CursoActualizarDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 764
+  },
+  {
+   "source": "ProfesorServicioPort",
+   "target": "ProfesorDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 765
+  },
+  {
+   "source": "ProfesorServicioPort",
+   "target": "ProfesorCrearDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 766
+  },
+  {
+   "source": "ProfesorServicioPort",
+   "target": "ProfesorActualizarDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 767
+  },
+  {
+   "source": "ProfesorMapeador",
+   "target": "Mapeador",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 768
+  },
+  {
+   "source": "ProfesorMapeador",
+   "target": "ProfesorDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 769
+  },
+  {
+   "source": "ProfesorMapeador",
+   "target": "Profesor",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 770
+  },
+  {
+   "source": "CursoMapeador",
+   "target": "Mapeador",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 771
+  },
+  {
+   "source": "CursoMapeador",
+   "target": "CursoDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 772
+  },
+  {
+   "source": "CursoMapeador",
+   "target": "Curso",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 773
+  },
+  {
+   "source": "AsignaturaMapeador",
+   "target": "Mapeador",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 774
+  },
+  {
+   "source": "AsignaturaMapeador",
+   "target": "AsignaturaCostoDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 775
+  },
+  {
+   "source": "AsignaturaMapeador",
+   "target": "AsignaturaCosto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 776
+  },
+  {
+   "source": "EstudianteMapeador",
+   "target": "Mapeador",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 777
+  },
+  {
+   "source": "EstudianteMapeador",
+   "target": "EstudianteDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 778
+  },
+  {
+   "source": "EstudianteMapeador",
+   "target": "Estudiante",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 779
+  },
+  {
+   "source": "CursoRepositorioImpl",
+   "target": "RepositorioBaseAbstracto",
+   "type": "EXTENDS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 780
+  },
+  {
+   "source": "CursoRepositorioImpl",
+   "target": "CursoRepositorio",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 781
+  },
+  {
+   "source": "CursoRepositorioImpl",
+   "target": "Curso",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 782
+  },
+  {
+   "source": "ProfesorRepositorioImpl",
+   "target": "RepositorioBaseAbstracto",
+   "type": "EXTENDS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 783
+  },
+  {
+   "source": "ProfesorRepositorioImpl",
+   "target": "ProfesorRepositorio",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 784
+  },
+  {
+   "source": "ProfesorRepositorioImpl",
+   "target": "Profesor",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 785
+  },
+  {
+   "source": "AsignaturaRepositorioImpl",
+   "target": "RepositorioBaseAbstracto",
+   "type": "EXTENDS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 786
+  },
+  {
+   "source": "AsignaturaRepositorioImpl",
+   "target": "AsignaturaRepositorio",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 787
+  },
+  {
+   "source": "AsignaturaRepositorioImpl",
+   "target": "AsignaturaCosto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 788
+  },
+  {
+   "source": "EstudianteRepositorioImpl",
+   "target": "RepositorioBaseAbstracto",
+   "type": "EXTENDS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 789
+  },
+  {
+   "source": "EstudianteRepositorioImpl",
+   "target": "EstudianteRepositorio",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 790
+  },
+  {
+   "source": "EstudianteRepositorioImpl",
+   "target": "Estudiante",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 791
+  },
+  {
+   "source": "RepositorioBaseAbstracto",
+   "target": "RepositorioBase",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 792
+  },
+  {
+   "source": "EstadoEntidadConverter",
+   "target": "EstadoEntidad",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 793
+  },
+  {
+   "source": "ConfiguracionDeDependencias",
+   "target": "ModuloConfigurable",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 794
+  },
+  {
+   "source": "ConfiguracionModuloEstudiante",
+   "target": "ModuloConfigurable",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 795
+  },
+  {
+   "source": "ConfiguracionModuloEstudiante",
+   "target": "EstudianteRepositorio",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 796
+  },
+  {
+   "source": "ConfiguracionModuloEstudiante",
+   "target": "EstudianteServicio",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 797
+  },
+  {
+   "source": "ConfiguracionModuloAsignatura",
+   "target": "ModuloConfigurable",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 798
+  },
+  {
+   "source": "ConfiguracionModuloAsignatura",
+   "target": "AsignaturaRepositorio",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 799
+  },
+  {
+   "source": "ConfiguracionModuloAsignatura",
+   "target": "AsignaturaServicio",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 800
+  },
+  {
+   "source": "ConfiguracionModuloCurso",
+   "target": "ModuloConfigurable",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 801
+  },
+  {
+   "source": "ConfiguracionModuloCurso",
+   "target": "CursoRepositorio",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 802
+  },
+  {
+   "source": "ConfiguracionModuloCurso",
+   "target": "CursoServicio",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 803
+  },
+  {
+   "source": "ConfiguracionModuloProfesor",
+   "target": "ModuloConfigurable",
+   "type": "IMPLEMENTS",
+   "sourceHead": "none",
+   "targetHead": "triangle",
+   "line": 804
+  },
+  {
+   "source": "ConfiguracionModuloProfesor",
+   "target": "ProfesorRepositorio",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 805
+  },
+  {
+   "source": "ConfiguracionModuloProfesor",
+   "target": "ProfesorServicio",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 806
+  },
+  {
+   "source": "CursoVista",
+   "target": "CursoControlador",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 807
+  },
+  {
+   "source": "CursoVista",
+   "target": "CursoDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 808
+  },
+  {
+   "source": "ProfesorVista",
+   "target": "ProfesorControlador",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 809
+  },
+  {
+   "source": "ProfesorVista",
+   "target": "ProfesorDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 810
+  },
+  {
+   "source": "AsignaturaVista",
+   "target": "AsignaturaControlador",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 811
+  },
+  {
+   "source": "AsignaturaVista",
+   "target": "AsignaturaCostoDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 812
+  },
+  {
+   "source": "EstudianteVista",
+   "target": "EstudianteControlador",
+   "type": "ASSOCIATION",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 813
+  },
+  {
+   "source": "EstudianteVista",
+   "target": "EstudianteDto",
+   "type": "DEPENDENCY",
+   "sourceHead": "none",
+   "targetHead": "open",
+   "line": 814
+  }
+ ],
+ "packages": [
+  {
+   "name": "com.universidad",
+   "typeIds": [
+    "App",
+    "AppScannerCli"
+   ]
+  },
+  {
+   "name": "com.universidad.application.dto.asignaturacosto",
+   "typeIds": [
+    "AsignaturaCostoActualizarDto",
+    "AsignaturaCostoCrearDto",
+    "AsignaturaCostoDto"
+   ]
+  },
+  {
+   "name": "com.universidad.application.dto.curso",
+   "typeIds": [
+    "CursoActualizarDto",
+    "CursoCrearDto",
+    "CursoDto"
+   ]
+  },
+  {
+   "name": "com.universidad.application.dto.estudiante",
+   "typeIds": [
+    "EstudianteActualizarDto",
+    "EstudianteCrearDto",
+    "EstudianteDto"
+   ]
+  },
+  {
+   "name": "com.universidad.application.dto.profesor",
+   "typeIds": [
+    "ProfesorActualizarDto",
+    "ProfesorCrearDto",
+    "ProfesorDto"
+   ]
+  },
+  {
+   "name": "com.universidad.application.dto.validacion",
+   "typeIds": [
+    "ReglasValidacion"
+   ]
+  },
+  {
+   "name": "com.universidad.application.mapper",
+   "typeIds": [
+    "AsignaturaMapeador",
+    "CursoMapeador",
+    "EstudianteMapeador",
+    "Mapeador",
+    "ProfesorMapeador"
+   ]
+  },
+  {
+   "name": "com.universidad.application.port",
+   "typeIds": [
+    "AsignaturaServicioPort",
+    "CursoServicioPort",
+    "EstudianteServicioPort",
+    "ProfesorServicioPort"
+   ]
+  },
+  {
+   "name": "com.universidad.application.service",
+   "typeIds": [
+    "AsignaturaServicio",
+    "CursoServicio",
+    "EstudianteServicio",
+    "ProfesorServicio"
+   ]
+  },
+  {
+   "name": "com.universidad.domain.model",
+   "typeIds": [
+    "AsignaturaCosto",
+    "Curso",
+    "Estudiante",
+    "Profesor"
+   ]
+  },
+  {
+   "name": "com.universidad.domain.model.constante",
+   "typeIds": [
+    "PoliticasAcademicas"
+   ]
+  },
+  {
+   "name": "com.universidad.domain.model.enumeracion",
+   "typeIds": [
+    "EstadoEntidad"
+   ]
+  },
+  {
+   "name": "com.universidad.domain.repository",
+   "typeIds": [
+    "AsignaturaRepositorio",
+    "CursoRepositorio",
+    "EstudianteRepositorio",
+    "ProfesorRepositorio",
+    "RepositorioBase"
+   ]
+  },
+  {
+   "name": "com.universidad.domain.repository.cargador",
+   "typeIds": [
+    "CargadorDatos",
+    "ProfesorCargador"
+   ]
+  },
+  {
+   "name": "com.universidad.infrastructure.cli",
+   "typeIds": [
+    "AsignaturaVista",
+    "CursoVista",
+    "EstudianteVista",
+    "ProfesorVista"
+   ]
+  },
+  {
+   "name": "com.universidad.infrastructure.cli.constante",
+   "typeIds": [
+    "ConfiguracionCli"
+   ]
+  },
+  {
+   "name": "com.universidad.infrastructure.config",
+   "typeIds": [
+    "ConfiguracionDeDependencias",
+    "RutaPersistencia"
+   ]
+  },
+  {
+   "name": "com.universidad.infrastructure.config.modulos",
+   "typeIds": [
+    "ConfiguracionModuloAsignatura",
+    "ConfiguracionModuloCurso",
+    "ConfiguracionModuloEstudiante",
+    "ConfiguracionModuloProfesor",
+    "ModuloConfigurable"
+   ]
+  },
+  {
+   "name": "com.universidad.infrastructure.persistence",
+   "typeIds": [
+    "AsignaturaRepositorioImpl",
+    "CursoRepositorioImpl",
+    "EstudianteRepositorioImpl",
+    "ProfesorRepositorioImpl",
+    "RepositorioBaseAbstracto"
+   ]
+  },
+  {
+   "name": "com.universidad.infrastructure.persistence.convertidor",
+   "typeIds": [
+    "EstadoEntidadConverter",
+    "FechaLocalConverter"
+   ]
+  },
+  {
+   "name": "com.universidad.interfaceadapters.controller",
+   "typeIds": [
+    "AsignaturaControlador",
+    "CursoControlador",
+    "EstudianteControlador",
+    "ProfesorControlador"
+   ]
+  },
+  {
+   "name": "com.universidad.tools",
+   "typeIds": [
+    "AppGenerador",
+    "MuestraTiposExternos"
+   ]
+  }
+ ],
+ "summaryMode": false,
+ "issues": [],
+ "notes": [],
+ "hide": [],
+ "direction": "TB",
+ "skinparams": {
+  "classattributeiconsize": "0"
+ }
+}

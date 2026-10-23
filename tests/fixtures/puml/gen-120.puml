@@ -1,0 +1,778 @@
+@startuml
+skinparam classAttributeIconSize 0
+set separator none
+package "gen.p0" as pkg_gen_p0 {
+  enum T0 {
+    UNO
+    DOS
+  }
+  record T1 {
+    + x: int
+    + y: int
+  }
+  interface T2 {
+    + run(): void
+  }
+  class T3 {
+    <<sealed>>
+    + area(): double
+  }
+  abstract class T4 {
+    # id: long
+    + calc(): double {abstract}
+  }
+  class T5 {
+    - datos: Map<String, List<Integer>>
+    «create» + T5(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T6 {
+    - datos: Map<String, List<Integer>>
+    «create» + T6(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T7 {
+    - datos: Map<String, List<Integer>>
+    «create» + T7(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T8 {
+    - datos: Map<String, List<Integer>>
+    «create» + T8(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T9 {
+    - datos: Map<String, List<Integer>>
+    «create» + T9(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  enum T10 {
+    UNO
+    DOS
+  }
+  record T11 {
+    + x: int
+    + y: int
+  }
+  interface T12 {
+    + run(): void
+  }
+  class T13 {
+    <<sealed>>
+    + area(): double
+  }
+  abstract class T14 {
+    # id: long
+    + calc(): double {abstract}
+  }
+  class T15 {
+    - datos: Map<String, List<Integer>>
+    «create» + T15(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T16 {
+    - datos: Map<String, List<Integer>>
+    «create» + T16(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T17 {
+    - datos: Map<String, List<Integer>>
+    «create» + T17(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T18 {
+    - datos: Map<String, List<Integer>>
+    «create» + T18(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T19 {
+    - datos: Map<String, List<Integer>>
+    «create» + T19(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  enum T20 {
+    UNO
+    DOS
+  }
+  record T21 {
+    + x: int
+    + y: int
+  }
+  interface T22 {
+    + run(): void
+  }
+  class T23 {
+    <<sealed>>
+    + area(): double
+  }
+  abstract class T24 {
+    # id: long
+    + calc(): double {abstract}
+  }
+  class T25 {
+    - datos: Map<String, List<Integer>>
+    «create» + T25(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T26 {
+    - datos: Map<String, List<Integer>>
+    «create» + T26(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T27 {
+    - datos: Map<String, List<Integer>>
+    «create» + T27(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T28 {
+    - datos: Map<String, List<Integer>>
+    «create» + T28(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T29 {
+    - datos: Map<String, List<Integer>>
+    «create» + T29(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  enum T30 {
+    UNO
+    DOS
+  }
+  record T31 {
+    + x: int
+    + y: int
+  }
+  interface T32 {
+    + run(): void
+  }
+  class T33 {
+    <<sealed>>
+    + area(): double
+  }
+  abstract class T34 {
+    # id: long
+    + calc(): double {abstract}
+  }
+  class T35 {
+    - datos: Map<String, List<Integer>>
+    «create» + T35(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T36 {
+    - datos: Map<String, List<Integer>>
+    «create» + T36(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T37 {
+    - datos: Map<String, List<Integer>>
+    «create» + T37(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T38 {
+    - datos: Map<String, List<Integer>>
+    «create» + T38(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T39 {
+    - datos: Map<String, List<Integer>>
+    «create» + T39(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  enum T40 {
+    UNO
+    DOS
+  }
+  record T41 {
+    + x: int
+    + y: int
+  }
+  interface T42 {
+    + run(): void
+  }
+  class T43 {
+    <<sealed>>
+    + area(): double
+  }
+  abstract class T44 {
+    # id: long
+    + calc(): double {abstract}
+  }
+  class T45 {
+    - datos: Map<String, List<Integer>>
+    «create» + T45(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T46 {
+    - datos: Map<String, List<Integer>>
+    «create» + T46(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T47 {
+    - datos: Map<String, List<Integer>>
+    «create» + T47(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T48 {
+    - datos: Map<String, List<Integer>>
+    «create» + T48(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T49 {
+    - datos: Map<String, List<Integer>>
+    «create» + T49(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+}
+package "gen.p1" as pkg_gen_p1 {
+  enum T50 {
+    UNO
+    DOS
+  }
+  record T51 {
+    + x: int
+    + y: int
+  }
+  interface T52 {
+    + run(): void
+  }
+  class T53 {
+    <<sealed>>
+    + area(): double
+  }
+  abstract class T54 {
+    # id: long
+    + calc(): double {abstract}
+  }
+  class T55 {
+    - datos: Map<String, List<Integer>>
+    «create» + T55(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T56 {
+    - datos: Map<String, List<Integer>>
+    «create» + T56(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T57 {
+    - datos: Map<String, List<Integer>>
+    «create» + T57(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T58 {
+    - datos: Map<String, List<Integer>>
+    «create» + T58(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T59 {
+    - datos: Map<String, List<Integer>>
+    «create» + T59(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  enum T60 {
+    UNO
+    DOS
+  }
+  record T61 {
+    + x: int
+    + y: int
+  }
+  interface T62 {
+    + run(): void
+  }
+  class T63 {
+    <<sealed>>
+    + area(): double
+  }
+  abstract class T64 {
+    # id: long
+    + calc(): double {abstract}
+  }
+  class T65 {
+    - datos: Map<String, List<Integer>>
+    «create» + T65(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T66 {
+    - datos: Map<String, List<Integer>>
+    «create» + T66(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T67 {
+    - datos: Map<String, List<Integer>>
+    «create» + T67(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T68 {
+    - datos: Map<String, List<Integer>>
+    «create» + T68(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T69 {
+    - datos: Map<String, List<Integer>>
+    «create» + T69(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  enum T70 {
+    UNO
+    DOS
+  }
+  record T71 {
+    + x: int
+    + y: int
+  }
+  interface T72 {
+    + run(): void
+  }
+  class T73 {
+    <<sealed>>
+    + area(): double
+  }
+  abstract class T74 {
+    # id: long
+    + calc(): double {abstract}
+  }
+  class T75 {
+    - datos: Map<String, List<Integer>>
+    «create» + T75(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T76 {
+    - datos: Map<String, List<Integer>>
+    «create» + T76(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T77 {
+    - datos: Map<String, List<Integer>>
+    «create» + T77(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T78 {
+    - datos: Map<String, List<Integer>>
+    «create» + T78(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T79 {
+    - datos: Map<String, List<Integer>>
+    «create» + T79(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  enum T80 {
+    UNO
+    DOS
+  }
+  record T81 {
+    + x: int
+    + y: int
+  }
+  interface T82 {
+    + run(): void
+  }
+  class T83 {
+    <<sealed>>
+    + area(): double
+  }
+  abstract class T84 {
+    # id: long
+    + calc(): double {abstract}
+  }
+  class T85 {
+    - datos: Map<String, List<Integer>>
+    «create» + T85(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T86 {
+    - datos: Map<String, List<Integer>>
+    «create» + T86(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T87 {
+    - datos: Map<String, List<Integer>>
+    «create» + T87(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T88 {
+    - datos: Map<String, List<Integer>>
+    «create» + T88(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T89 {
+    - datos: Map<String, List<Integer>>
+    «create» + T89(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  enum T90 {
+    UNO
+    DOS
+  }
+  record T91 {
+    + x: int
+    + y: int
+  }
+  interface T92 {
+    + run(): void
+  }
+  class T93 {
+    <<sealed>>
+    + area(): double
+  }
+  abstract class T94 {
+    # id: long
+    + calc(): double {abstract}
+  }
+  class T95 {
+    - datos: Map<String, List<Integer>>
+    «create» + T95(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T96 {
+    - datos: Map<String, List<Integer>>
+    «create» + T96(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T97 {
+    - datos: Map<String, List<Integer>>
+    «create» + T97(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T98 {
+    - datos: Map<String, List<Integer>>
+    «create» + T98(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T99 {
+    - datos: Map<String, List<Integer>>
+    «create» + T99(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+}
+package "gen.p2" as pkg_gen_p2 {
+  enum T100 {
+    UNO
+    DOS
+  }
+  record T101 {
+    + x: int
+    + y: int
+  }
+  interface T102 {
+    + run(): void
+  }
+  class T103 {
+    <<sealed>>
+    + area(): double
+  }
+  abstract class T104 {
+    # id: long
+    + calc(): double {abstract}
+  }
+  class T105 {
+    - datos: Map<String, List<Integer>>
+    «create» + T105(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T106 {
+    - datos: Map<String, List<Integer>>
+    «create» + T106(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T107 {
+    - datos: Map<String, List<Integer>>
+    «create» + T107(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T108 {
+    - datos: Map<String, List<Integer>>
+    «create» + T108(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T109 {
+    - datos: Map<String, List<Integer>>
+    «create» + T109(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  enum T110 {
+    UNO
+    DOS
+  }
+  record T111 {
+    + x: int
+    + y: int
+  }
+  interface T112 {
+    + run(): void
+  }
+  class T113 {
+    <<sealed>>
+    + area(): double
+  }
+  abstract class T114 {
+    # id: long
+    + calc(): double {abstract}
+  }
+  class T115 {
+    - datos: Map<String, List<Integer>>
+    «create» + T115(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T116 {
+    - datos: Map<String, List<Integer>>
+    «create» + T116(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T117 {
+    - datos: Map<String, List<Integer>>
+    «create» + T117(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T118 {
+    - datos: Map<String, List<Integer>>
+    «create» + T118(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+  class T119 {
+    - datos: Map<String, List<Integer>>
+    «create» + T119(datos: Map<String, List<Integer>>)
+    + get(k: String): Integer
+  }
+}
+T0 --> T1
+T1 ..> T8
+T2 --> T15
+T3 ..> T22
+T4 --> T29
+T5 ..> T36
+T6 --> T43
+T7 ..> T50
+T8 --> T57
+T9 ..> T64
+T10 --> T71
+T11 ..> T78
+T12 --> T85
+T13 ..> T92
+T14 --> T99
+T15 ..> T106
+T16 --> T113
+T17 ..> T0
+T18 --> T7
+T19 ..> T14
+T20 --> T21
+T21 ..> T28
+T22 --> T35
+T23 ..> T42
+T24 --> T49
+T25 ..> T56
+T26 --> T63
+T27 ..> T70
+T28 --> T77
+T29 ..> T84
+T30 --> T91
+T31 ..> T98
+T32 --> T105
+T33 ..> T112
+T34 --> T119
+T35 ..> T6
+T36 --> T13
+T37 ..> T20
+T38 --> T27
+T39 ..> T34
+T40 --> T41
+T41 ..> T48
+T42 --> T55
+T43 ..> T62
+T44 --> T69
+T45 ..> T76
+T46 --> T83
+T47 ..> T90
+T48 --> T97
+T49 ..> T104
+T50 --> T111
+T51 ..> T118
+T52 --> T5
+T53 ..> T12
+T54 --> T19
+T55 ..> T26
+T56 --> T33
+T57 ..> T40
+T58 --> T47
+T59 ..> T54
+T60 --> T61
+T61 ..> T68
+T62 --> T75
+T63 ..> T82
+T64 --> T89
+T65 ..> T96
+T66 --> T103
+T67 ..> T110
+T68 --> T117
+T69 ..> T4
+T70 --> T11
+T71 ..> T18
+T72 --> T25
+T73 ..> T32
+T74 --> T39
+T75 ..> T46
+T76 --> T53
+T77 ..> T60
+T78 --> T67
+T79 ..> T74
+T80 --> T81
+T81 ..> T88
+T82 --> T95
+T83 ..> T102
+T84 --> T109
+T85 ..> T116
+T86 --> T3
+T87 ..> T10
+T88 --> T17
+T89 ..> T24
+T90 --> T31
+T91 ..> T38
+T92 --> T45
+T93 ..> T52
+T94 --> T59
+T95 ..> T66
+T96 --> T73
+T97 ..> T80
+T98 --> T87
+T99 ..> T94
+T100 --> T101
+T101 ..> T108
+T102 --> T115
+T103 ..> T2
+T104 --> T9
+T105 ..> T16
+T106 --> T23
+T107 ..> T30
+T108 --> T37
+T109 ..> T44
+T110 --> T51
+T111 ..> T58
+T112 --> T65
+T113 ..> T72
+T114 --> T79
+T115 ..> T86
+T116 --> T93
+T117 ..> T100
+T118 --> T107
+T119 ..> T114
+T0 --> T1
+T1 ..> T8
+T2 --> T15
+T3 ..> T22
+T4 --> T29
+T5 ..> T36
+T6 --> T43
+T7 ..> T50
+T8 --> T57
+T9 ..> T64
+T10 --> T71
+T11 ..> T78
+T12 --> T85
+T13 ..> T92
+T14 --> T99
+T15 ..> T106
+T16 --> T113
+T17 ..> T0
+T18 --> T7
+T19 ..> T14
+T20 --> T21
+T21 ..> T28
+T22 --> T35
+T23 ..> T42
+T24 --> T49
+T25 ..> T56
+T26 --> T63
+T27 ..> T70
+T28 --> T77
+T29 ..> T84
+T30 --> T91
+T31 ..> T98
+T32 --> T105
+T33 ..> T112
+T34 --> T119
+T35 ..> T6
+T36 --> T13
+T37 ..> T20
+T38 --> T27
+T39 ..> T34
+T40 --> T41
+T41 ..> T48
+T42 --> T55
+T43 ..> T62
+T44 --> T69
+T45 ..> T76
+T46 --> T83
+T47 ..> T90
+T48 --> T97
+T49 ..> T104
+T50 --> T111
+T51 ..> T118
+T52 --> T5
+T53 ..> T12
+T54 --> T19
+T55 ..> T26
+T56 --> T33
+T57 ..> T40
+T58 --> T47
+T59 ..> T54
+T60 --> T61
+T61 ..> T68
+T62 --> T75
+T63 ..> T82
+T64 --> T89
+T65 ..> T96
+T66 --> T103
+T67 ..> T110
+T68 --> T117
+T69 ..> T4
+T70 --> T11
+T71 ..> T18
+T72 --> T25
+T73 ..> T32
+T74 --> T39
+T75 ..> T46
+T76 --> T53
+T77 ..> T60
+T78 --> T67
+T79 ..> T74
+T80 --> T81
+T81 ..> T88
+T82 --> T95
+T83 ..> T102
+T84 --> T109
+T85 ..> T116
+T86 --> T3
+T87 ..> T10
+T88 --> T17
+T89 ..> T24
+T90 --> T31
+T91 ..> T38
+T92 --> T45
+T93 ..> T52
+T94 --> T59
+T95 ..> T66
+T96 --> T73
+T97 ..> T80
+T98 --> T87
+T99 ..> T94
+T100 --> T101
+T101 ..> T108
+T102 --> T115
+T103 ..> T2
+T104 --> T9
+T105 ..> T16
+T106 --> T23
+T107 ..> T30
+T108 --> T37
+T109 ..> T44
+T110 --> T51
+T111 ..> T58
+T112 --> T65
+T113 ..> T72
+T114 --> T79
+T115 ..> T86
+T116 --> T93
+T117 ..> T100
+T118 --> T107
+T119 ..> T114
+@enduml
