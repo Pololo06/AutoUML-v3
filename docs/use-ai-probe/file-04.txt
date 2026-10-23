@@ -1,0 +1,3 @@
+PROBE=COUNT40-FILE-04-BEGIN
+Contenido de control para contar archivos accesibles.
+PROBE=COUNT40-FILE-04-END
